@@ -1,8 +1,7 @@
 resource "aws_s3_bucket" "class" {
-  bucket = "my-module-bucket-2026"
+  bucket = var.bucket_name
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+    Name = local.ec2_tag
   }
 }

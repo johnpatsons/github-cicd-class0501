@@ -1,9 +1,9 @@
 resource "aws_instance" "class" {
-  ami           = "ami-0ec10929233384c7f"
+  ami           = var.ami_id
   instance_type = "t2.micro"
   
 
   tags = {
-    Name = "terraform-class-instance"
+    Name = local.ec2_tag
   }
 }
