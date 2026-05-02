@@ -1,11 +1,13 @@
 name: deploy terraform code
 
 on:
-  push:
+  pull_request:
     branches:
       - main
+      - dev
 
 jobs:
+
   deploy:     
     runs-on: ubuntu-latest   # Use the latest Ubuntu runner, creates virtual environment for the job
     steps:
