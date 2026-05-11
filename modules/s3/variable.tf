@@ -1,3 +1,3 @@
 variable "bucket_name" {
-    default = "my-module-bucket-0501"
+    default = "my-tfjenkins-bucket-0501"
 }
