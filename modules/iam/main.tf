@@ -1,4 +1,4 @@
 resource "aws_iam_user" "example" {
-    name = "terraform-jenkins-user"
+    name = "terraform-jenkins26-user"
 }
 
